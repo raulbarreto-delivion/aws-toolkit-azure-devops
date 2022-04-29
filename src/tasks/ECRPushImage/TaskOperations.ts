@@ -80,7 +80,7 @@ export class TaskOperations {
 
         if (this.taskParameters.outputVariable) {
             console.log(tl.loc('SettingOutputVariable', this.taskParameters.outputVariable, targetImageRef))
-            tl.setVariable(this.taskParameters.outputVariable, targetImageRef)
+            tl.setVariable(this.taskParameters.outputVariable, targetImageRef, true)
         }
 
         if (this.taskParameters.removeDockerImage) {
